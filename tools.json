@@ -596,5 +596,19 @@
     "feats": [
       "ready to run"
     ]
+  },
+  {
+    "name": "Dns Lookup",
+    "desc": "A dns lookup CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "dns-lookup-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run"
+    ]
   }
 ]

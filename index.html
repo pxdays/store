@@ -520,357 +520,46 @@ body::after {
 const LTC = "LNVJxFNcD5Mn8AjbAHQGpX2EqVDhKfF4sA";
 
 const tools = [
-  {
-    name: "AI Prompt Manager",
-    desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
-    price: 4,
-    version: "1.0.0",
-    file: "ai-prompt-manager-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["categorize by AI model", "tag system with search", "variable substitution", "export to markdown"]
-  },
-  {
-    name: "Bulk Image Resizer",
-    desc: "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Progress bar, folder watch mode, quality settings.",
-    price: 4,
-    version: "1.0.0",
-    file: "bulk-image-resizer-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["batch 100s of images", "PNG/JPG/WebP/AVIF support", "quality control", "folder watch mode"]
-  },
-  {
-    name: "auto-vpn-killswitch",
-    desc: "VPN killswitch for Linux using iptables/nftables. Supports WireGuard and OpenVPN. Auto-reconnect, logging, desktop notifications.",
-    price: 5,
-    version: "1.0.0",
-    file: "auto-vpn-killswitch-v1.0.0.zip",
-    tags: ["sh", "cli", "sec"],
-    feats: ["wireguard + openvpn support", "auto-reconnect", "one-command install", "desktop notifications"]
-  },
-  {
-    name: "bash-obfuscator",
-    desc: "Obfuscate bash scripts - variable randomization, base64 encoding, comment stripping, dead code injection. Outputs unreadable but functional .sh files.",
-    price: 7,
-    version: "1.0.0",
-    file: "bash-obfuscator-v1.0.0.zip",
-    tags: ["py", "sh", "cli"],
-    feats: ["variable name randomization", "string encoding", "dead code injection", "GUI mode with zenity"]
-  },
-  {
-    name: "duplicate-file-finder",
-    desc: "Finds and removes duplicate files using: exact byte comparison (not just hash), fuzzy name matching, content similarity (for near-duplicates). Features: dry-run mode, auto-clean with confirmation, move to quarantine folder, save report as HTML with previews. Handles millions of files efficiently.",
-    price: 4,
-    version: "1.0.0",
-    file: "duplicate-file-finder-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "encrypted-file-wiper",
-    desc: "Securely deletes files beyond recovery. Passes: overwrite with random data (1-35 passes), rename to random string, truncate, delete. Supports: file shred, free space wipe, entire drive wipe. Reports verification with hexdump to confirm destruction. Includes DoD 5220.22-M and Gutmann methods.",
-    price: 5,
-    version: "1.0.0",
-    file: "encrypted-file-wiper-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "filesystem-watcher",
-    desc: "Watch directories for changes and trigger actions. Features: real-time file change detection, auto-backup modified files to a timestamped archive, rsync integration, exclusions, email notification on changes above threshold.",
-    price: 5,
-    version: "1.0.0",
-    file: "filesystem-watcher-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "log-analyzer",
-    desc: "Parse and analyze log files (syslog, auth.log, apache, nginx, docker). Features: pattern detection, error frequency charts in terminal, IP geolocation, timeline view, export as HTML report. Color-coded output.",
-    price: 5,
-    version: "1.0.0",
-    file: "log-analyzer-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "mac-address-spoofer",
-    desc: "Temporarily change your MAC address on Linux. Features: random MAC generation, vendor-specific MACs, persistent spoofing, per-interface config, automatic restore on exit, network manager compatibility.",
-    price: 4,
-    version: "1.0.0",
-    file: "mac-address-spoofer-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "batch",
-    desc: "",
-    price: 0,
-    version: "1.0.0",
-    file: "batch.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "media-metadata-stripper",
-    desc: "Remove EXIF and metadata from images, videos, and PDFs. Features: batch process directories, preview metadata before stripping, preserve timestamps, recursive mode, output report of removed fields. Supports jpg/png/webp/avif/mp4/pdf.",
-    price: 4,
-    version: "1.0.0",
-    file: "media-metadata-stripper-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["tested and working", "full source included", "ready to run"]
-  },
-  {
-    name: "Archive Extractor",
-    desc: "A archive extractor CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "archive-extractor-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Ascii Table",
-    desc: "A ascii table CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "ascii-table-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Backup Rotator",
-    desc: "A backup rotator CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "backup-rotator-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Barcode Gen",
-    desc: "A barcode gen CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "barcode-gen-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Base64 Encode",
-    desc: "A base64 encode CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "base64-encode-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Binary To Ascii",
-    desc: "A binary to ascii CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "binary-to-ascii-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Calendar View",
-    desc: "A calendar view CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "calendar-view-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Case Converter",
-    desc: "A case converter CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "case-converter-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Cert Pinning Check",
-    desc: "A cert pinning check CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "cert-pinning-check-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Cert Viewer",
-    desc: "A cert viewer CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "cert-viewer-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Checksum Dir",
-    desc: "A checksum dir CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "checksum-dir-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Chmod Helper",
-    desc: "A chmod helper CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "chmod-helper-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Cmyk Convert",
-    desc: "A cmyk convert CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "cmyk-convert-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Color Convert",
-    desc: "A color convert CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "color-convert-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Commit Stats",
-    desc: "A commit stats CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "commit-stats-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Countdown Timer",
-    desc: "A countdown timer CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "countdown-timer-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Cpu Stress",
-    desc: "A cpu stress CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "cpu-stress-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Credit Card Validate",
-    desc: "A credit card validate CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "credit-card-validate-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Css Minify",
-    desc: "A css minify CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "css-minify-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Docker Cleanup Script",
-    desc: "A docker cleanup script CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "docker-cleanup-script-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Network Troubleshoot Cli",
-    desc: "A network troubleshoot cli CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "network-troubleshoot-cli-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Pi Hole Adblock Manager",
-    desc: "A pi hole adblock manager CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "pi-hole-adblock-manager-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Python Obfuscator",
-    desc: "A python obfuscator CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "python-obfuscator-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Qr Toolkit",
-    desc: "A qr toolkit CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "qr-toolkit-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run", "full source included"]
-  },
-  {
-    name: "Csv Column Extract",
-    desc: "A csv column extract CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "csv-column-extract-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run"]
-  },
-  {
-    name: "Csv To Json",
-    desc: "A csv to json CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "csv-to-json-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run"]
-  },
-  {
-    name: "Date Calc",
-    desc: "A date calc CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "date-calc-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run"]
-  },
-  {
-    name: "Disk Usage",
-    desc: "A disk usage CLI utility",
-    price: 4,
-    version: "1.0.0",
-    file: "disk-usage-v1.0.0.zip",
-    tags: ["py", "cli"],
-    feats: ["ready to run"]
-  },
+  {name: "AI Prompt Manager",desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",price: 4,version: "1.0.0",file: "ai-prompt-manager-v1.0.0.zip",tags: ["py", "cli"],feats: ["categorize by AI model", "tag system with search", "variable substitution", "export to markdown"]},
+  {name: "Bulk Image Resizer",desc: "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Progress bar, folder watch mode, quality settings.",price: 4,version: "1.0.0",file: "bulk-image-resizer-v1.0.0.zip",tags: ["py", "cli"],feats: ["batch 100s of images", "PNG/JPG/WebP/AVIF support", "quality control", "folder watch mode"]},
+  {name: "auto-vpn-killswitch",desc: "VPN killswitch for Linux using iptables/nftables. Supports WireGuard and OpenVPN. Auto-reconnect, logging, desktop notifications.",price: 5,version: "1.0.0",file: "auto-vpn-killswitch-v1.0.0.zip",tags: ["sh", "cli", "sec"],feats: ["wireguard + openvpn support", "auto-reconnect", "one-command install", "desktop notifications"]},
+  {name: "bash-obfuscator",desc: "Obfuscate bash scripts - variable randomization, base64 encoding, comment stripping, dead code injection. Outputs unreadable but functional .sh files.",price: 7,version: "1.0.0",file: "bash-obfuscator-v1.0.0.zip",tags: ["py", "sh", "cli"],feats: ["variable name randomization", "string encoding", "dead code injection", "GUI mode with zenity"]},
+  {name: "duplicate-file-finder",desc: "Finds and removes duplicate files using: exact byte comparison (not just hash), fuzzy name matching, content similarity (for near-duplicates). Features: dry-run mode, auto-clean with confirmation, move to quarantine folder, save report as HTML with previews. Handles millions of files efficiently.",price: 4,version: "1.0.0",file: "duplicate-file-finder-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "encrypted-file-wiper",desc: "Securely deletes files beyond recovery. Passes: overwrite with random data (1-35 passes), rename to random string, truncate, delete. Supports: file shred, free space wipe, entire drive wipe. Reports verification with hexdump to confirm destruction. Includes DoD 5220.22-M and Gutmann methods.",price: 5,version: "1.0.0",file: "encrypted-file-wiper-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "filesystem-watcher",desc: "Watch directories for changes and trigger actions. Features: real-time file change detection, auto-backup modified files to a timestamped archive, rsync integration, exclusions, email notification on changes above threshold.",price: 5,version: "1.0.0",file: "filesystem-watcher-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "log-analyzer",desc: "Parse and analyze log files (syslog, auth.log, apache, nginx, docker). Features: pattern detection, error frequency charts in terminal, IP geolocation, timeline view, export as HTML report. Color-coded output.",price: 5,version: "1.0.0",file: "log-analyzer-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "mac-address-spoofer",desc: "Temporarily change your MAC address on Linux. Features: random MAC generation, vendor-specific MACs, persistent spoofing, per-interface config, automatic restore on exit, network manager compatibility.",price: 4,version: "1.0.0",file: "mac-address-spoofer-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "batch",desc: "",price: 0,version: "1.0.0",file: "batch.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "media-metadata-stripper",desc: "Remove EXIF and metadata from images, videos, and PDFs. Features: batch process directories, preview metadata before stripping, preserve timestamps, recursive mode, output report of removed fields. Supports jpg/png/webp/avif/mp4/pdf.",price: 4,version: "1.0.0",file: "media-metadata-stripper-v1.0.0.zip",tags: ["py", "cli"],feats: ["tested and working", "full source included", "ready to run"]},
+  {name: "Archive Extractor",desc: "A archive extractor CLI utility",price: 4,version: "1.0.0",file: "archive-extractor-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Ascii Table",desc: "A ascii table CLI utility",price: 4,version: "1.0.0",file: "ascii-table-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Backup Rotator",desc: "A backup rotator CLI utility",price: 4,version: "1.0.0",file: "backup-rotator-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Barcode Gen",desc: "A barcode gen CLI utility",price: 4,version: "1.0.0",file: "barcode-gen-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Base64 Encode",desc: "A base64 encode CLI utility",price: 4,version: "1.0.0",file: "base64-encode-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Binary To Ascii",desc: "A binary to ascii CLI utility",price: 4,version: "1.0.0",file: "binary-to-ascii-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Calendar View",desc: "A calendar view CLI utility",price: 4,version: "1.0.0",file: "calendar-view-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Case Converter",desc: "A case converter CLI utility",price: 4,version: "1.0.0",file: "case-converter-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Cert Pinning Check",desc: "A cert pinning check CLI utility",price: 4,version: "1.0.0",file: "cert-pinning-check-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Cert Viewer",desc: "A cert viewer CLI utility",price: 4,version: "1.0.0",file: "cert-viewer-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Checksum Dir",desc: "A checksum dir CLI utility",price: 4,version: "1.0.0",file: "checksum-dir-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Chmod Helper",desc: "A chmod helper CLI utility",price: 4,version: "1.0.0",file: "chmod-helper-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Cmyk Convert",desc: "A cmyk convert CLI utility",price: 4,version: "1.0.0",file: "cmyk-convert-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Color Convert",desc: "A color convert CLI utility",price: 4,version: "1.0.0",file: "color-convert-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Commit Stats",desc: "A commit stats CLI utility",price: 4,version: "1.0.0",file: "commit-stats-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Countdown Timer",desc: "A countdown timer CLI utility",price: 4,version: "1.0.0",file: "countdown-timer-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Cpu Stress",desc: "A cpu stress CLI utility",price: 4,version: "1.0.0",file: "cpu-stress-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Credit Card Validate",desc: "A credit card validate CLI utility",price: 4,version: "1.0.0",file: "credit-card-validate-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Css Minify",desc: "A css minify CLI utility",price: 4,version: "1.0.0",file: "css-minify-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Docker Cleanup Script",desc: "A docker cleanup script CLI utility",price: 4,version: "1.0.0",file: "docker-cleanup-script-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Network Troubleshoot Cli",desc: "A network troubleshoot cli CLI utility",price: 4,version: "1.0.0",file: "network-troubleshoot-cli-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Pi Hole Adblock Manager",desc: "A pi hole adblock manager CLI utility",price: 4,version: "1.0.0",file: "pi-hole-adblock-manager-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Python Obfuscator",desc: "A python obfuscator CLI utility",price: 4,version: "1.0.0",file: "python-obfuscator-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Qr Toolkit",desc: "A qr toolkit CLI utility",price: 4,version: "1.0.0",file: "qr-toolkit-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run", "full source included"]},
+  {name: "Csv Column Extract",desc: "A csv column extract CLI utility",price: 4,version: "1.0.0",file: "csv-column-extract-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run"]},
+  {name: "Csv To Json",desc: "A csv to json CLI utility",price: 4,version: "1.0.0",file: "csv-to-json-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run"]},
+  {name: "Date Calc",desc: "A date calc CLI utility",price: 4,version: "1.0.0",file: "date-calc-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run"]},
+  {name: "Disk Usage",desc: "A disk usage CLI utility",price: 4,version: "1.0.0",file: "disk-usage-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run"]},
+  {name: "Dns Lookup",desc: "A dns lookup CLI utility",price: 4,version: "1.0.0",file: "dns-lookup-v1.0.0.zip",tags: ["py", "cli"],feats: ["ready to run"]},
 ];
 
 const C = document.getElementById('toolsContainer');
