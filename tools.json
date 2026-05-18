@@ -19,5 +19,12 @@
     "price": 5,
     "version": "1.0.0",
     "file": "auto-vpn-killswitch-v1.0.0.zip"
+  },
+  {
+    "name": "bash-obfuscator",
+    "desc": "Obfuscates bash scripts by: variable name randomization, base64 encoding of strings, comment stripping, code flattening, dead code injection. Output is a functionally identical but unreadable .sh file. Includes a simple GUI mode with zenity.",
+    "price": 7,
+    "version": "1.0.0",
+    "file": "bash-obfuscator-v1.0.0.zip"
   }
 ]
