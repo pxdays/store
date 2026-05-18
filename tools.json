@@ -1,7 +1,7 @@
 [
   {
     "name": "AI Prompt Manager",
-    "desc": "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "ai-prompt-manager-v1.0.0.zip",
@@ -18,7 +18,7 @@
   },
   {
     "name": "Bulk Image Resizer",
-    "desc": "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Progress bar, folder watch mode, quality settings.",
+    "desc": "Resize, convert, and optimize images in batch with format support for PNG, JPG, WebP, and AVIF.",
     "price": 4,
     "version": "1.0.0",
     "file": "bulk-image-resizer-v1.0.0.zip",
@@ -35,7 +35,7 @@
   },
   {
     "name": "auto-vpn-killswitch",
-    "desc": "VPN killswitch for Linux using iptables/nftables. Supports WireGuard and OpenVPN. Auto-reconnect, logging, desktop notifications.",
+    "desc": "Configure and manage VPN killswitch with iptables/nftables, auto-reconnect, and network monitoring.",
     "price": 5,
     "version": "1.0.0",
     "file": "auto-vpn-killswitch-v1.0.0.zip",
@@ -53,7 +53,7 @@
   },
   {
     "name": "bash-obfuscator",
-    "desc": "Obfuscate bash scripts - variable randomization, base64 encoding, comment stripping, dead code injection. Outputs unreadable but functional .sh files.",
+    "desc": "Obfuscate source code with variable renaming, string encoding, dead code injection, and anti-debug measures.",
     "price": 7,
     "version": "1.0.0",
     "file": "bash-obfuscator-v1.0.0.zip",
@@ -71,7 +71,7 @@
   },
   {
     "name": "duplicate-file-finder",
-    "desc": "Finds and removes duplicate files using: exact byte comparison (not just hash), fuzzy name matching, content similarity (for near-duplicates). Features: dry-run mode, auto-clean with confirmation, move to quarantine folder, save report as HTML with previews. Handles millions of files efficiently.",
+    "desc": "Find and manage duplicate files using byte-comparison, fuzzy matching, and batch cleanup.",
     "price": 4,
     "version": "1.0.0",
     "file": "duplicate-file-finder-v1.0.0.zip",
@@ -87,7 +87,7 @@
   },
   {
     "name": "encrypted-file-wiper",
-    "desc": "Securely deletes files beyond recovery. Passes: overwrite with random data (1-35 passes), rename to random string, truncate, delete. Supports: file shred, free space wipe, entire drive wipe. Reports verification with hexdump to confirm destruction. Includes DoD 5220.22-M and Gutmann methods.",
+    "desc": "Encrypt and decrypt files using AES-256-GCM with key derivation, batch processing, and integrity verification.",
     "price": 5,
     "version": "1.0.0",
     "file": "encrypted-file-wiper-v1.0.0.zip",
@@ -103,7 +103,7 @@
   },
   {
     "name": "filesystem-watcher",
-    "desc": "Watch directories for changes and trigger actions. Features: real-time file change detection, auto-backup modified files to a timestamped archive, rsync integration, exclusions, email notification on changes above threshold.",
+    "desc": "Watch filesystem directories for changes with event logging, backup triggers, and notifications.",
     "price": 5,
     "version": "1.0.0",
     "file": "filesystem-watcher-v1.0.0.zip",
@@ -119,7 +119,7 @@
   },
   {
     "name": "log-analyzer",
-    "desc": "Parse and analyze log files (syslog, auth.log, apache, nginx, docker). Features: pattern detection, error frequency charts in terminal, IP geolocation, timeline view, export as HTML report. Color-coded output.",
+    "desc": "Parse and analyze log files with pattern detection, frequency charts, timeline views, and HTML reports.",
     "price": 5,
     "version": "1.0.0",
     "file": "log-analyzer-v1.0.0.zip",
@@ -135,7 +135,7 @@
   },
   {
     "name": "mac-address-spoofer",
-    "desc": "Temporarily change your MAC address on Linux. Features: random MAC generation, vendor-specific MACs, persistent spoofing, per-interface config, automatic restore on exit, network manager compatibility.",
+    "desc": "Look up MAC address vendor information, generate random MACs, and spoof network interface addresses.",
     "price": 4,
     "version": "1.0.0",
     "file": "mac-address-spoofer-v1.0.0.zip",
@@ -151,7 +151,7 @@
   },
   {
     "name": "batch",
-    "desc": "",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 0,
     "version": "1.0.0",
     "file": "batch.zip",
@@ -167,7 +167,7 @@
   },
   {
     "name": "media-metadata-stripper",
-    "desc": "Remove EXIF and metadata from images, videos, and PDFs. Features: batch process directories, preview metadata before stripping, preserve timestamps, recursive mode, output report of removed fields. Supports jpg/png/webp/avif/mp4/pdf.",
+    "desc": "Look up IP geolocation data including ISP, city, country, coordinates, and ASN information.",
     "price": 4,
     "version": "1.0.0",
     "file": "media-metadata-stripper-v1.0.0.zip",
@@ -183,7 +183,7 @@
   },
   {
     "name": "Archive Extractor",
-    "desc": "A archive extractor CLI utility",
+    "desc": "Extract various archive formats (zip, tar, gz, bz2, xz, 7z) with auto-detection and listing.",
     "price": 4,
     "version": "1.0.0",
     "file": "archive-extractor-v1.0.0.zip",
@@ -198,7 +198,7 @@
   },
   {
     "name": "Ascii Table",
-    "desc": "A ascii table CLI utility",
+    "desc": "Display ASCII tables with character codes, binary, hex, and HTML entity representations.",
     "price": 4,
     "version": "1.0.0",
     "file": "ascii-table-v1.0.0.zip",
@@ -213,7 +213,7 @@
   },
   {
     "name": "Backup Rotator",
-    "desc": "A backup rotator CLI utility",
+    "desc": "Apply ROT13, ROT47, and configurable rotation ciphers to text with file and clipboard support.",
     "price": 4,
     "version": "1.0.0",
     "file": "backup-rotator-v1.0.0.zip",
@@ -228,7 +228,7 @@
   },
   {
     "name": "Barcode Gen",
-    "desc": "A barcode gen CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "barcode-gen-v1.0.0.zip",
@@ -243,7 +243,7 @@
   },
   {
     "name": "Base64 Encode",
-    "desc": "A base64 encode CLI utility",
+    "desc": "Encode and decode base64 data from files or stdin with support for URL-safe variants and line wrapping.",
     "price": 4,
     "version": "1.0.0",
     "file": "base64-encode-v1.0.0.zip",
@@ -258,7 +258,7 @@
   },
   {
     "name": "Binary To Ascii",
-    "desc": "A binary to ascii CLI utility",
+    "desc": "Display ASCII tables with character codes, binary, hex, and HTML entity representations.",
     "price": 4,
     "version": "1.0.0",
     "file": "binary-to-ascii-v1.0.0.zip",
@@ -273,7 +273,7 @@
   },
   {
     "name": "Calendar View",
-    "desc": "A calendar view CLI utility",
+    "desc": "Display calendars with event marking, date highlighting, and week number display.",
     "price": 4,
     "version": "1.0.0",
     "file": "calendar-view-v1.0.0.zip",
@@ -288,7 +288,7 @@
   },
   {
     "name": "Case Converter",
-    "desc": "A case converter CLI utility",
+    "desc": "Convert text between camelCase, snake_case, kebab-case, PascalCase, and title case with batch processing.",
     "price": 4,
     "version": "1.0.0",
     "file": "case-converter-v1.0.0.zip",
@@ -303,7 +303,7 @@
   },
   {
     "name": "Cert Pinning Check",
-    "desc": "A cert pinning check CLI utility",
+    "desc": "Generate, sign, and manage SSL certificates and CSRs with configuration file support and OpenSSL integration.",
     "price": 4,
     "version": "1.0.0",
     "file": "cert-pinning-check-v1.0.0.zip",
@@ -318,7 +318,7 @@
   },
   {
     "name": "Cert Viewer",
-    "desc": "A cert viewer CLI utility",
+    "desc": "Generate, sign, and manage SSL certificates and CSRs with configuration file support and OpenSSL integration.",
     "price": 4,
     "version": "1.0.0",
     "file": "cert-viewer-v1.0.0.zip",
@@ -333,7 +333,7 @@
   },
   {
     "name": "Checksum Dir",
-    "desc": "A checksum dir CLI utility",
+    "desc": "Generate and verify checksum files for directories with progress reporting and multiple algorithm support.",
     "price": 4,
     "version": "1.0.0",
     "file": "checksum-dir-v1.0.0.zip",
@@ -348,7 +348,7 @@
   },
   {
     "name": "Chmod Helper",
-    "desc": "A chmod helper CLI utility",
+    "desc": "Calculate and apply file permissions with octal/symbolic modes, recursive changes, and ownership management.",
     "price": 4,
     "version": "1.0.0",
     "file": "chmod-helper-v1.0.0.zip",
@@ -363,7 +363,7 @@
   },
   {
     "name": "Cmyk Convert",
-    "desc": "A cmyk convert CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "cmyk-convert-v1.0.0.zip",
@@ -378,7 +378,7 @@
   },
   {
     "name": "Color Convert",
-    "desc": "A color convert CLI utility",
+    "desc": "Convert between color formats (HEX, RGB, HSL, CMYK) with palette generation and accessibility checking.",
     "price": 4,
     "version": "1.0.0",
     "file": "color-convert-v1.0.0.zip",
@@ -393,7 +393,7 @@
   },
   {
     "name": "Commit Stats",
-    "desc": "A commit stats CLI utility",
+    "desc": "Count and analyze git commits with author stats, time distribution, and contribution charts.",
     "price": 4,
     "version": "1.0.0",
     "file": "commit-stats-v1.0.0.zip",
@@ -408,7 +408,7 @@
   },
   {
     "name": "Countdown Timer",
-    "desc": "A countdown timer CLI utility",
+    "desc": "Set timers and countdowns with desktop notifications, multiple concurrent timers, and logging.",
     "price": 4,
     "version": "1.0.0",
     "file": "countdown-timer-v1.0.0.zip",
@@ -423,7 +423,7 @@
   },
   {
     "name": "Cpu Stress",
-    "desc": "A cpu stress CLI utility",
+    "desc": "Stress test CPU with configurable load levels, duration, core affinity, and temperature monitoring.",
     "price": 4,
     "version": "1.0.0",
     "file": "cpu-stress-v1.0.0.zip",
@@ -438,7 +438,7 @@
   },
   {
     "name": "Credit Card Validate",
-    "desc": "A credit card validate CLI utility",
+    "desc": "Validate credit card numbers using Luhn algorithm with issuer detection and formatting.",
     "price": 4,
     "version": "1.0.0",
     "file": "credit-card-validate-v1.0.0.zip",
@@ -453,7 +453,7 @@
   },
   {
     "name": "Css Minify",
-    "desc": "A css minify CLI utility",
+    "desc": "Parse and edit INI configuration files with section management, key lookup, and format preservation.",
     "price": 4,
     "version": "1.0.0",
     "file": "css-minify-v1.0.0.zip",
@@ -468,7 +468,7 @@
   },
   {
     "name": "Docker Cleanup Script",
-    "desc": "A docker cleanup script CLI utility",
+    "desc": "Look up IP geolocation data including ISP, city, country, coordinates, and ASN information.",
     "price": 4,
     "version": "1.0.0",
     "file": "docker-cleanup-script-v1.0.0.zip",
@@ -483,7 +483,7 @@
   },
   {
     "name": "Network Troubleshoot Cli",
-    "desc": "A network troubleshoot cli CLI utility",
+    "desc": "Diagnose network issues with ping, traceroute, DNS lookup, WHOIS, port checking, and speed testing.",
     "price": 4,
     "version": "1.0.0",
     "file": "network-troubleshoot-cli-v1.0.0.zip",
@@ -498,7 +498,7 @@
   },
   {
     "name": "Pi Hole Adblock Manager",
-    "desc": "A pi hole adblock manager CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "pi-hole-adblock-manager-v1.0.0.zip",
@@ -513,7 +513,7 @@
   },
   {
     "name": "Python Obfuscator",
-    "desc": "A python obfuscator CLI utility",
+    "desc": "Obfuscate source code with variable renaming, string encoding, dead code injection, and anti-debug measures.",
     "price": 4,
     "version": "1.0.0",
     "file": "python-obfuscator-v1.0.0.zip",
@@ -528,7 +528,7 @@
   },
   {
     "name": "Qr Toolkit",
-    "desc": "A qr toolkit CLI utility",
+    "desc": "Generate and decode QR codes with custom sizes, colors, error correction, and batch processing.",
     "price": 4,
     "version": "1.0.0",
     "file": "qr-toolkit-v1.0.0.zip",
@@ -543,7 +543,7 @@
   },
   {
     "name": "Csv Column Extract",
-    "desc": "A csv column extract CLI utility",
+    "desc": "View, filter, and transform CSV data with column extraction, delimiter conversion, and statistical summaries.",
     "price": 4,
     "version": "1.0.0",
     "file": "csv-column-extract-v1.0.0.zip",
@@ -557,7 +557,7 @@
   },
   {
     "name": "Csv To Json",
-    "desc": "A csv to json CLI utility",
+    "desc": "Format, validate, and manipulate JSON data with filtering, transformation, and diff capabilities.",
     "price": 4,
     "version": "1.0.0",
     "file": "csv-to-json-v1.0.0.zip",
@@ -571,7 +571,7 @@
   },
   {
     "name": "Date Calc",
-    "desc": "A date calc CLI utility",
+    "desc": "Calculate date differences, add/subtract durations, and convert between date formats.",
     "price": 4,
     "version": "1.0.0",
     "file": "date-calc-v1.0.0.zip",
@@ -585,7 +585,7 @@
   },
   {
     "name": "Disk Usage",
-    "desc": "A disk usage CLI utility",
+    "desc": "Monitor disk usage with visual charts, alert thresholds, directory tree analysis, and historical tracking.",
     "price": 4,
     "version": "1.0.0",
     "file": "disk-usage-v1.0.0.zip",
@@ -599,7 +599,7 @@
   },
   {
     "name": "Dns Lookup",
-    "desc": "A dns lookup CLI utility",
+    "desc": "Perform DNS lookups (A, AAAA, MX, NS, TXT) with support for custom resolvers and reverse lookups.",
     "price": 4,
     "version": "1.0.0",
     "file": "dns-lookup-v1.0.0.zip",
@@ -613,7 +613,7 @@
   },
   {
     "name": "batch",
-    "desc": "",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 0,
     "version": "1.0.0",
     "file": "batch.zip",
@@ -629,7 +629,7 @@
   },
   {
     "name": "Currency Rate",
-    "desc": "A currency rate CLI utility",
+    "desc": "Convert between currencies using live exchange rates with offline cache and history.",
     "price": 4,
     "version": "1.0.0",
     "file": "currency-rate-v1.0.0.zip",
@@ -644,7 +644,7 @@
   },
   {
     "name": "Docker Stats",
-    "desc": "A docker stats CLI utility",
+    "desc": "Clean up Docker resources with selective pruning, disk usage reports, and retention policies.",
     "price": 4,
     "version": "1.0.0",
     "file": "docker-stats-v1.0.0.zip",
@@ -659,7 +659,7 @@
   },
   {
     "name": "Email Validator",
-    "desc": "A email validator CLI utility",
+    "desc": "Validate email addresses with syntax checking, domain verification, and disposable email detection.",
     "price": 4,
     "version": "1.0.0",
     "file": "email-validator-v1.0.0.zip",
@@ -674,7 +674,7 @@
   },
   {
     "name": "Env Manager",
-    "desc": "A env manager CLI utility",
+    "desc": "Manage environment variable files (.env) with validation, encryption, and template generation.",
     "price": 4,
     "version": "1.0.0",
     "file": "env-manager-v1.0.0.zip",
@@ -689,7 +689,7 @@
   },
   {
     "name": "Epoch Converter",
-    "desc": "A epoch converter CLI utility",
+    "desc": "Convert between Unix timestamps and human-readable dates with timezone support.",
     "price": 4,
     "version": "1.0.0",
     "file": "epoch-converter-v1.0.0.zip",
@@ -704,7 +704,7 @@
   },
   {
     "name": "File Type Detector",
-    "desc": "A file type detector CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "file-type-detector-v1.0.0.zip",
@@ -719,7 +719,7 @@
   },
   {
     "name": "Fstab Editor",
-    "desc": "A fstab editor CLI utility",
+    "desc": "Edit and validate fstab entries with UUID resolution, mount point management, and backup creation.",
     "price": 4,
     "version": "1.0.0",
     "file": "fstab-editor-v1.0.0.zip",
@@ -734,7 +734,7 @@
   },
   {
     "name": "Git Branch Cleaner",
-    "desc": "A git branch cleaner CLI utility",
+    "desc": "Manage git branches with cleanup of merged/stale branches, commit counting, and size analysis.",
     "price": 4,
     "version": "1.0.0",
     "file": "git-branch-cleaner-v1.0.0.zip",
@@ -749,7 +749,7 @@
   },
   {
     "name": "Hash File",
-    "desc": "A hash file CLI utility",
+    "desc": "Compute file hashes using MD5, SHA-1, SHA-256, SHA-512 with recursive directory scanning and integrity verification.",
     "price": 4,
     "version": "1.0.0",
     "file": "hash-file-v1.0.0.zip",
@@ -764,7 +764,7 @@
   },
   {
     "name": "Hex Dump",
-    "desc": "A hex dump CLI utility",
+    "desc": "Convert between hexadecimal and binary representations with support for large files and formatted output.",
     "price": 4,
     "version": "1.0.0",
     "file": "hex-dump-v1.0.0.zip",
@@ -779,7 +779,7 @@
   },
   {
     "name": "Hex To Rgb",
-    "desc": "A hex to rgb CLI utility",
+    "desc": "Convert between hexadecimal and binary representations with support for large files and formatted output.",
     "price": 4,
     "version": "1.0.0",
     "file": "hex-to-rgb-v1.0.0.zip",
@@ -794,7 +794,7 @@
   },
   {
     "name": "Html Strip",
-    "desc": "A html strip CLI utility",
+    "desc": "Look up IP geolocation data including ISP, city, country, coordinates, and ASN information.",
     "price": 4,
     "version": "1.0.0",
     "file": "html-strip-v1.0.0.zip",
@@ -809,7 +809,7 @@
   },
   {
     "name": "Http Header Check",
-    "desc": "A http header check CLI utility",
+    "desc": "Inspect HTTP response headers, status codes, and server info with redirect following and timing data.",
     "price": 4,
     "version": "1.0.0",
     "file": "http-header-check-v1.0.0.zip",
@@ -824,7 +824,7 @@
   },
   {
     "name": "Iban Check",
-    "desc": "A iban check CLI utility",
+    "desc": "Validate International Bank Account Numbers with checksum verification and country detection.",
     "price": 4,
     "version": "1.0.0",
     "file": "iban-check-v1.0.0.zip",
@@ -839,7 +839,7 @@
   },
   {
     "name": "Ini Parse",
-    "desc": "A ini parse CLI utility",
+    "desc": "Parse and edit INI configuration files with section management, key lookup, and format preservation.",
     "price": 4,
     "version": "1.0.0",
     "file": "ini-parse-v1.0.0.zip",
@@ -854,7 +854,7 @@
   },
   {
     "name": "Ip Calc",
-    "desc": "A ip calc CLI utility",
+    "desc": "Look up IP geolocation data including ISP, city, country, coordinates, and ASN information.",
     "price": 4,
     "version": "1.0.0",
     "file": "ip-calc-v1.0.0.zip",
@@ -869,7 +869,7 @@
   },
   {
     "name": "Js Minify",
-    "desc": "A js minify CLI utility",
+    "desc": "Parse and edit INI configuration files with section management, key lookup, and format preservation.",
     "price": 4,
     "version": "1.0.0",
     "file": "js-minify-v1.0.0.zip",
@@ -884,7 +884,7 @@
   },
   {
     "name": "Json Flattener",
-    "desc": "A json flattener CLI utility",
+    "desc": "Format, validate, and manipulate JSON data with filtering, transformation, and diff capabilities.",
     "price": 4,
     "version": "1.0.0",
     "file": "json-flattener-v1.0.0.zip",
@@ -899,7 +899,7 @@
   },
   {
     "name": "Json Validate",
-    "desc": "A json validate CLI utility",
+    "desc": "Format, validate, and manipulate JSON data with filtering, transformation, and diff capabilities.",
     "price": 4,
     "version": "1.0.0",
     "file": "json-validate-v1.0.0.zip",
@@ -914,7 +914,7 @@
   },
   {
     "name": "Length Convert",
-    "desc": "A length convert CLI utility",
+    "desc": "Convert between length units with decimal precision and common reference values.",
     "price": 4,
     "version": "1.0.0",
     "file": "length-convert-v1.0.0.zip",
@@ -929,7 +929,7 @@
   },
   {
     "name": "Link Checker",
-    "desc": "A link checker CLI utility",
+    "desc": "Check links in files for validity with concurrent checking, timeout control, and report generation.",
     "price": 4,
     "version": "1.0.0",
     "file": "link-checker-v1.0.0.zip",
@@ -944,7 +944,7 @@
   },
   {
     "name": "Log Tailer",
-    "desc": "A log tailer CLI utility",
+    "desc": "Parse and analyze log files with pattern detection, frequency charts, timeline views, and HTML reports.",
     "price": 4,
     "version": "1.0.0",
     "file": "log-tailer-v1.0.0.zip",
@@ -959,7 +959,7 @@
   },
   {
     "name": "Mac Vendor Lookup",
-    "desc": "A mac vendor lookup CLI utility",
+    "desc": "Look up MAC address vendor information, generate random MACs, and spoof network interface addresses.",
     "price": 4,
     "version": "1.0.0",
     "file": "mac-vendor-lookup-v1.0.0.zip",
@@ -974,7 +974,7 @@
   },
   {
     "name": "Markdown Toc",
-    "desc": "A markdown toc CLI utility",
+    "desc": "Preview and convert Markdown files with table of contents generation, link checking, and HTML export.",
     "price": 4,
     "version": "1.0.0",
     "file": "markdown-toc-v1.0.0.zip",
@@ -989,7 +989,7 @@
   },
   {
     "name": "Mount Manager",
-    "desc": "A mount manager CLI utility",
+    "desc": "List, mount, and unmount filesystems with fstab editing, UUID resolution, and device info.",
     "price": 4,
     "version": "1.0.0",
     "file": "mount-manager-v1.0.0.zip",
@@ -1004,7 +1004,7 @@
   },
   {
     "name": "Netstat Viewer",
-    "desc": "A netstat viewer CLI utility",
+    "desc": "Display network connections, listening ports, and protocol statistics with filtering.",
     "price": 4,
     "version": "1.0.0",
     "file": "netstat-viewer-v1.0.0.zip",
@@ -1019,7 +1019,7 @@
   },
   {
     "name": "Otp Generator",
-    "desc": "A otp generator CLI utility",
+    "desc": "Generate and validate time-based one-time passwords (TOTP) with QR code provisioning and backup codes.",
     "price": 4,
     "version": "1.0.0",
     "file": "otp-generator-v1.0.0.zip",
@@ -1034,7 +1034,7 @@
   },
   {
     "name": "Package Size",
-    "desc": "A package size CLI utility",
+    "desc": "List installed packages by size, count dependencies, and find orphaned packages.",
     "price": 4,
     "version": "1.0.0",
     "file": "package-size-v1.0.0.zip",
@@ -1049,7 +1049,7 @@
   },
   {
     "name": "Password Strength",
-    "desc": "A password strength CLI utility",
+    "desc": "Generate and evaluate password strength with customizable rules, entropy calculation, and breach database lookup.",
     "price": 4,
     "version": "1.0.0",
     "file": "password-strength-v1.0.0.zip",
@@ -1064,7 +1064,7 @@
   },
   {
     "name": "Phone Format",
-    "desc": "A phone format CLI utility",
+    "desc": "Format and validate phone numbers with country code detection and regional format support.",
     "price": 4,
     "version": "1.0.0",
     "file": "phone-format-v1.0.0.zip",
@@ -1079,7 +1079,7 @@
   },
   {
     "name": "Port Listener",
-    "desc": "A port listener CLI utility",
+    "desc": "Scan TCP and UDP ports with service fingerprinting, banner grabbing, and timed execution.",
     "price": 4,
     "version": "1.0.0",
     "file": "port-listener-v1.0.0.zip",
@@ -1094,7 +1094,7 @@
   },
   {
     "name": "Postcode Validator",
-    "desc": "A postcode validator CLI utility",
+    "desc": "Validate and format postal codes with country-specific rules and batch validation.",
     "price": 4,
     "version": "1.0.0",
     "file": "postcode-validator-v1.0.0.zip",
@@ -1109,7 +1109,7 @@
   },
   {
     "name": "Process Tree",
-    "desc": "A process tree CLI utility",
+    "desc": "List, filter, and manage system processes with tree view, resource sorting, and signal sending.",
     "price": 4,
     "version": "1.0.0",
     "file": "process-tree-v1.0.0.zip",
@@ -1124,7 +1124,7 @@
   },
   {
     "name": "Qr Decode",
-    "desc": "A qr decode CLI utility",
+    "desc": "Generate and decode QR codes with custom sizes, colors, error correction, and batch processing.",
     "price": 4,
     "version": "1.0.0",
     "file": "qr-decode-v1.0.0.zip",
@@ -1139,7 +1139,7 @@
   },
   {
     "name": "Ram Usage",
-    "desc": "A ram usage CLI utility",
+    "desc": "Monitor RAM usage with process breakdown, swap analysis, and configurable alert thresholds.",
     "price": 4,
     "version": "1.0.0",
     "file": "ram-usage-v1.0.0.zip",
@@ -1154,7 +1154,7 @@
   },
   {
     "name": "Random Password Gen",
-    "desc": "A random password gen CLI utility",
+    "desc": "Generate and evaluate password strength with customizable rules, entropy calculation, and breach database lookup.",
     "price": 4,
     "version": "1.0.0",
     "file": "random-password-gen-v1.0.0.zip",
@@ -1169,7 +1169,7 @@
   },
   {
     "name": "Rgb To Hsl",
-    "desc": "A rgb to hsl CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "rgb-to-hsl-v1.0.0.zip",
@@ -1184,7 +1184,7 @@
   },
   {
     "name": "Rot13",
-    "desc": "A rot13 CLI utility",
+    "desc": "Apply ROT13, ROT47, and configurable rotation ciphers to text with file and clipboard support.",
     "price": 4,
     "version": "1.0.0",
     "file": "rot13-v1.0.0.zip",
@@ -1199,7 +1199,7 @@
   },
   {
     "name": "Screenshot Ocr Cli",
-    "desc": "A screenshot ocr cli CLI utility",
+    "desc": "Capture screenshots with region selection, window focus, timer delay, and OCR text extraction.",
     "price": 4,
     "version": "1.0.0",
     "file": "screenshot-ocr-cli-v1.0.0.zip",
@@ -1214,7 +1214,7 @@
   },
   {
     "name": "Slugify",
-    "desc": "A slugify CLI utility",
+    "desc": "Generate URL-safe slugs from text with configurable separators, transliteration, and length limits.",
     "price": 4,
     "version": "1.0.0",
     "file": "slugify-v1.0.0.zip",
@@ -1229,7 +1229,7 @@
   },
   {
     "name": "Ssh Key Gen",
-    "desc": "A ssh key gen CLI utility",
+    "desc": "Generate SSH key pairs with configurable algorithms, comment management, and authorized_keys file helpers.",
     "price": 4,
     "version": "1.0.0",
     "file": "ssh-key-gen-v1.0.0.zip",
@@ -1244,7 +1244,7 @@
   },
   {
     "name": "Ssl Expiry",
-    "desc": "A ssl expiry CLI utility",
+    "desc": "Check SSL/TLS certificate expiry dates, issuer info, and chain validity for multiple domains from a CSV list.",
     "price": 4,
     "version": "1.0.0",
     "file": "ssl-expiry-v1.0.0.zip",
@@ -1259,7 +1259,7 @@
   },
   {
     "name": "Stealth Port Scanner",
-    "desc": "A stealth port scanner CLI utility",
+    "desc": "Scan TCP and UDP ports with service fingerprinting, banner grabbing, and timed execution.",
     "price": 4,
     "version": "1.0.0",
     "file": "stealth-port-scanner-v1.0.0.zip",
@@ -1274,7 +1274,7 @@
   },
   {
     "name": "Subdomain Enumerator",
-    "desc": "A subdomain enumerator CLI utility",
+    "desc": "Enumerate subdomains using wordlists, certificate transparency logs, and DNS brute force with thread control.",
     "price": 4,
     "version": "1.0.0",
     "file": "subdomain-enumerator-v1.0.0.zip",
@@ -1289,7 +1289,7 @@
   },
   {
     "name": "Subnet Calc",
-    "desc": "A subnet calc CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "subnet-calc-v1.0.0.zip",
@@ -1304,7 +1304,7 @@
   },
   {
     "name": "Symlink Manager",
-    "desc": "A symlink manager CLI utility",
+    "desc": "Create, list, and manage symbolic links with target resolution, broken link detection, and bulk operations.",
     "price": 4,
     "version": "1.0.0",
     "file": "symlink-manager-v1.0.0.zip",
@@ -1319,7 +1319,7 @@
   },
   {
     "name": "Sysadmin Health Check",
-    "desc": "A sysadmin health check CLI utility",
+    "desc": "Run comprehensive system health checks covering CPU, RAM, disk, network, and services.",
     "price": 4,
     "version": "1.0.0",
     "file": "sysadmin-health-check-v1.0.0.zip",
@@ -1334,7 +1334,7 @@
   },
   {
     "name": "Temperature Convert",
-    "desc": "A temperature convert CLI utility",
+    "desc": "Convert between temperature units (Celsius, Fahrenheit, Kelvin) with formula display.",
     "price": 4,
     "version": "1.0.0",
     "file": "temperature-convert-v1.0.0.zip",
@@ -1349,7 +1349,7 @@
   },
   {
     "name": "Text Crypt Cli",
-    "desc": "A text crypt cli CLI utility",
+    "desc": "Encrypt, transform, and analyze text with rot13, base64, case conversion, and statistical analysis.",
     "price": 4,
     "version": "1.0.0",
     "file": "text-crypt-cli-v1.0.0.zip",
@@ -1364,7 +1364,7 @@
   },
   {
     "name": "Text Encrypt",
-    "desc": "A text encrypt CLI utility",
+    "desc": "Encrypt and decrypt files using AES-256-GCM with key derivation, batch processing, and integrity verification.",
     "price": 4,
     "version": "1.0.0",
     "file": "text-encrypt-v1.0.0.zip",
@@ -1379,7 +1379,7 @@
   },
   {
     "name": "Text Stats",
-    "desc": "A text stats CLI utility",
+    "desc": "Encrypt, transform, and analyze text with rot13, base64, case conversion, and statistical analysis.",
     "price": 4,
     "version": "1.0.0",
     "file": "text-stats-v1.0.0.zip",
@@ -1394,7 +1394,7 @@
   },
   {
     "name": "Timezone Convert",
-    "desc": "A timezone convert CLI utility",
+    "desc": "Convert times across timezones with DST awareness, city lookup, and batch conversion.",
     "price": 4,
     "version": "1.0.0",
     "file": "timezone-convert-v1.0.0.zip",
@@ -1409,7 +1409,7 @@
   },
   {
     "name": "Tmux Session Manager",
-    "desc": "A tmux session manager CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "tmux-session-manager-v1.0.0.zip",
@@ -1424,7 +1424,7 @@
   },
   {
     "name": "Toml To Json",
-    "desc": "A toml to json CLI utility",
+    "desc": "Format, validate, and manipulate JSON data with filtering, transformation, and diff capabilities.",
     "price": 4,
     "version": "1.0.0",
     "file": "toml-to-json-v1.0.0.zip",
@@ -1439,7 +1439,7 @@
   },
   {
     "name": "Tsv To Csv",
-    "desc": "A tsv to csv CLI utility",
+    "desc": "View, filter, and transform CSV data with column extraction, delimiter conversion, and statistical summaries.",
     "price": 4,
     "version": "1.0.0",
     "file": "tsv-to-csv-v1.0.0.zip",
@@ -1454,7 +1454,7 @@
   },
   {
     "name": "Url Encoder",
-    "desc": "A url encoder CLI utility",
+    "desc": "Encode and decode URLs with configurable character handling and batch file processing.",
     "price": 4,
     "version": "1.0.0",
     "file": "url-encoder-v1.0.0.zip",
@@ -1469,7 +1469,7 @@
   },
   {
     "name": "User Auditor",
-    "desc": "A user auditor CLI utility",
+    "desc": "Audit system users with login history, group membership, password age, and SSH key listing.",
     "price": 4,
     "version": "1.0.0",
     "file": "user-auditor-v1.0.0.zip",
@@ -1484,7 +1484,7 @@
   },
   {
     "name": "Uuid Gen",
-    "desc": "A uuid gen CLI utility",
+    "desc": "Generate UUIDs (v1, v4, v7) with bulk generation, formatted output, and timestamp extraction.",
     "price": 4,
     "version": "1.0.0",
     "file": "uuid-gen-v1.0.0.zip",
@@ -1499,7 +1499,7 @@
   },
   {
     "name": "Weight Convert",
-    "desc": "A weight convert CLI utility",
+    "desc": "Convert between weight units with common presets and precision control.",
     "price": 4,
     "version": "1.0.0",
     "file": "weight-convert-v1.0.0.zip",
@@ -1514,7 +1514,7 @@
   },
   {
     "name": "Whois Cli",
-    "desc": "A whois cli CLI utility",
+    "desc": "Perform WHOIS lookups for domains and IP addresses with parsed registration and expiry data.",
     "price": 4,
     "version": "1.0.0",
     "file": "whois-cli-v1.0.0.zip",
@@ -1529,7 +1529,7 @@
   },
   {
     "name": "Wifi Audit Scanner",
-    "desc": "A wifi audit scanner CLI utility",
+    "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
     "file": "wifi-audit-scanner-v1.0.0.zip",
@@ -1544,7 +1544,7 @@
   },
   {
     "name": "Word Counter",
-    "desc": "A word counter CLI utility",
+    "desc": "Count words, lines, characters, and frequency analysis with sorting, filtering, and export options.",
     "price": 4,
     "version": "1.0.0",
     "file": "word-counter-v1.0.0.zip",
@@ -1559,7 +1559,7 @@
   },
   {
     "name": "Xml Format",
-    "desc": "A xml format CLI utility",
+    "desc": "Format, validate, and query XML data with XPath support, schema validation, and pretty printing.",
     "price": 4,
     "version": "1.0.0",
     "file": "xml-format-v1.0.0.zip",
@@ -1574,7 +1574,7 @@
   },
   {
     "name": "Yaml Validate",
-    "desc": "A yaml validate CLI utility",
+    "desc": "Convert between YAML, JSON, and TOML formats with validation and pretty printing.",
     "price": 4,
     "version": "1.0.0",
     "file": "yaml-validate-v1.0.0.zip",
