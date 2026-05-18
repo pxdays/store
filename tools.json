@@ -1,0 +1,16 @@
+[
+  {
+    "name": "AI Prompt Manager",
+    "desc": "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
+    "price": 12,
+    "version": "1.0.0",
+    "file": "ai-prompt-manager-v1.0.0.zip"
+  },
+  {
+    "name": "Bulk Image Resizer",
+    "desc": "Resize hundreds of images at once. Supports jpg, png, webp, avif. Progress bar, folder watch mode, quality settings.",
+    "price": 15,
+    "version": "1.0.0",
+    "file": "bulk-image-resizer-v1.0.0.zip"
+  }
+]
