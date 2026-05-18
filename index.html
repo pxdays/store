@@ -525,35 +525,45 @@ const tools = [
     desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
     price: 4,
     version: "1.0.0",
-    file: "ai-prompt-manager-v1.0.0.zip"
+    file: "ai-prompt-manager-v1.0.0.zip",
+    tags: ["py", "cli"],
+    feats: ["categorize by AI model", "tag system with search", "variable substitution", "export to markdown"]
   },
   {
     name: "Bulk Image Resizer",
     desc: "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Progress bar, folder watch mode, quality settings.",
     price: 4,
     version: "1.0.0",
-    file: "bulk-image-resizer-v1.0.0.zip"
+    file: "bulk-image-resizer-v1.0.0.zip",
+    tags: ["py", "cli"],
+    feats: ["batch 100s of images", "PNG/JPG/WebP/AVIF support", "quality control", "folder watch mode"]
   },
   {
     name: "auto-vpn-killswitch",
-    desc: "Sets up a VPN killswitch on Linux using iptables/nftables. If VPN drops, all internet traffic is blocked until VPN reconnects. Features: supports WireGuard and OpenVPN, killswitch on/off toggle, status monitoring, auto-reconnect, logging, desktop notifications. One-command install.",
+    desc: "VPN killswitch for Linux using iptables/nftables. Supports WireGuard and OpenVPN. Auto-reconnect, logging, desktop notifications.",
     price: 5,
     version: "1.0.0",
-    file: "auto-vpn-killswitch-v1.0.0.zip"
+    file: "auto-vpn-killswitch-v1.0.0.zip",
+    tags: ["sh", "cli", "sec"],
+    feats: ["wireguard + openvpn support", "auto-reconnect", "one-command install", "desktop notifications"]
   },
   {
     name: "bash-obfuscator",
-    desc: "Obfuscates bash scripts by: variable name randomization, base64 encoding of strings, comment stripping, code flattening, dead code injection. Output is a functionally identical but unreadable .sh file. Includes a simple GUI mode with zenity.",
+    desc: "Obfuscate bash scripts - variable randomization, base64 encoding, comment stripping, dead code injection. Outputs unreadable but functional .sh files.",
     price: 7,
     version: "1.0.0",
-    file: "bash-obfuscator-v1.0.0.zip"
+    file: "bash-obfuscator-v1.0.0.zip",
+    tags: ["py", "sh", "cli"],
+    feats: ["variable name randomization", "string encoding", "dead code injection", "GUI mode with zenity"]
   },
   {
-    name: "docker-cleanup-script",
-    desc: "One-command Docker cleanup tool. Features: remove unused containers/images/volumes/networks, prune with age-based filters, save disk space report, keep-last-N-images policy, dry-run mode, cron-ready. Safer than docker system prune -a.",
+    name: "AI Prompt Manager",
+    desc: "test",
     price: 4,
     version: "1.0.0",
-    file: "docker-cleanup-script-v1.0.0.zip"
+    file: "test.zip",
+    tags: ["py", "cli"],
+    feats: ["tested and working", "full source included", "ready to run"]
   },
 ];
 
@@ -571,8 +581,8 @@ C.innerHTML = '';
 tools.forEach(t => {
   const ltc = (t.price / 100).toFixed(2);
   const sid = t.name.replace(/[^a-zA-Z0-9]/g,'');
-  const tags = t.tags.map(tg => `<span class="tag ${tg}">${tg}</span>`).join('');
-  const feats = t.feats.map(f => `<span class="feat">${f}</span>`).join('');
+  const tags = (t.tags || ["cli"]).map(tg => `<span class="tag ${tg}">${tg}</span>`).join('');
+  const feats = (t.feats || []).map(f => `<span class="feat">${f}</span>`).join('');
 
   const el = document.createElement('div');
   el.className = 'tool';
