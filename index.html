@@ -522,18 +522,25 @@ const LTC = "LNVJxFNcD5Mn8AjbAHQGpX2EqVDhKfF4sA";
 const tools = [
   {
     name: "AI Prompt Manager",
-    desc: "organize prompts across chatgpt, claude, gemini, etc. tag system, variable injection, markdown export, clipboard shortcuts. full terminal ui.",
-    price: 4, ver: "1.0.0",
-    tags: ["py","cli"],
-    feats: ["categorize by model", "tag + search", "variable substitution {{x}}", "export to markdown", "copy to clipboard"]
+    desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
+    price: 4,
+    version: "1.0.0",
+    file: "ai-prompt-manager-v1.0.0.zip"
   },
   {
     name: "Bulk Image Resizer",
-    desc: "resize hundreds of images at once. png, jpg, webp, avif. progress bar, quality control, folder watch mode for auto-processing.",
-    price: 4, ver: "1.0.0",
-    tags: ["py","cli"],
-    feats: ["batch 100s of images", "png/jpg/webp/avif support", "folder watch mode", "quality & dimension control", "real-time progress"]
-  }
+    desc: "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Progress bar, folder watch mode, quality settings.",
+    price: 4,
+    version: "1.0.0",
+    file: "bulk-image-resizer-v1.0.0.zip"
+  },
+  {
+    name: "auto-vpn-killswitch",
+    desc: "Sets up a VPN killswitch on Linux using iptables/nftables. If VPN drops, all internet traffic is blocked until VPN reconnects. Features: supports WireGuard and OpenVPN, killswitch on/off toggle, status monitoring, auto-reconnect, logging, desktop notifications. One-command install.",
+    price: 5,
+    version: "1.0.0",
+    file: "auto-vpn-killswitch-v1.0.0.zip"
+  },
 ];
 
 const C = document.getElementById('toolsContainer');

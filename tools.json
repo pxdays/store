@@ -12,5 +12,12 @@
     "price": 4,
     "version": "1.0.0",
     "file": "bulk-image-resizer-v1.0.0.zip"
+  },
+  {
+    "name": "auto-vpn-killswitch",
+    "desc": "Sets up a VPN killswitch on Linux using iptables/nftables. If VPN drops, all internet traffic is blocked until VPN reconnects. Features: supports WireGuard and OpenVPN, killswitch on/off toggle, status monitoring, auto-reconnect, logging, desktop notifications. One-command install.",
+    "price": 5,
+    "version": "1.0.0",
+    "file": "auto-vpn-killswitch-v1.0.0.zip"
   }
 ]
