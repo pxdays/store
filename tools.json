@@ -540,5 +540,61 @@
       "ready to run",
       "full source included"
     ]
+  },
+  {
+    "name": "Csv Column Extract",
+    "desc": "A csv column extract CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "csv-column-extract-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run"
+    ]
+  },
+  {
+    "name": "Csv To Json",
+    "desc": "A csv to json CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "csv-to-json-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run"
+    ]
+  },
+  {
+    "name": "Date Calc",
+    "desc": "A date calc CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "date-calc-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run"
+    ]
+  },
+  {
+    "name": "Disk Usage",
+    "desc": "A disk usage CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "disk-usage-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run"
+    ]
   }
 ]
