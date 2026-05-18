@@ -180,5 +180,365 @@
       "full source included",
       "ready to run"
     ]
+  },
+  {
+    "name": "Archive Extractor",
+    "desc": "A archive extractor CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "archive-extractor-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Ascii Table",
+    "desc": "A ascii table CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ascii-table-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Backup Rotator",
+    "desc": "A backup rotator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "backup-rotator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Barcode Gen",
+    "desc": "A barcode gen CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "barcode-gen-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Base64 Encode",
+    "desc": "A base64 encode CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "base64-encode-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Binary To Ascii",
+    "desc": "A binary to ascii CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "binary-to-ascii-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Calendar View",
+    "desc": "A calendar view CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "calendar-view-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Case Converter",
+    "desc": "A case converter CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "case-converter-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Cert Pinning Check",
+    "desc": "A cert pinning check CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "cert-pinning-check-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Cert Viewer",
+    "desc": "A cert viewer CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "cert-viewer-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Checksum Dir",
+    "desc": "A checksum dir CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "checksum-dir-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Chmod Helper",
+    "desc": "A chmod helper CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "chmod-helper-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Cmyk Convert",
+    "desc": "A cmyk convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "cmyk-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Color Convert",
+    "desc": "A color convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "color-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Commit Stats",
+    "desc": "A commit stats CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "commit-stats-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Countdown Timer",
+    "desc": "A countdown timer CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "countdown-timer-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Cpu Stress",
+    "desc": "A cpu stress CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "cpu-stress-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Credit Card Validate",
+    "desc": "A credit card validate CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "credit-card-validate-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Css Minify",
+    "desc": "A css minify CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "css-minify-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Docker Cleanup Script",
+    "desc": "A docker cleanup script CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "docker-cleanup-script-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Network Troubleshoot Cli",
+    "desc": "A network troubleshoot cli CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "network-troubleshoot-cli-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Pi Hole Adblock Manager",
+    "desc": "A pi hole adblock manager CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "pi-hole-adblock-manager-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Python Obfuscator",
+    "desc": "A python obfuscator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "python-obfuscator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
+  },
+  {
+    "name": "Qr Toolkit",
+    "desc": "A qr toolkit CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "qr-toolkit-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source included"
+    ]
   }
 ]
