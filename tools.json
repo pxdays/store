@@ -132,5 +132,21 @@
       "full source included",
       "ready to run"
     ]
+  },
+  {
+    "name": "mac-address-spoofer",
+    "desc": "Temporarily change your MAC address on Linux. Features: random MAC generation, vendor-specific MACs, persistent spoofing, per-interface config, automatic restore on exit, network manager compatibility.",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "mac-address-spoofer-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "tested and working",
+      "full source included",
+      "ready to run"
+    ]
   }
 ]
