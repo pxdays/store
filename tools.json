@@ -626,5 +626,965 @@
       "full source included",
       "ready to run"
     ]
+  },
+  {
+    "name": "Currency Rate",
+    "desc": "A currency rate CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "currency-rate-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Docker Stats",
+    "desc": "A docker stats CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "docker-stats-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Email Validator",
+    "desc": "A email validator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "email-validator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Env Manager",
+    "desc": "A env manager CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "env-manager-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Epoch Converter",
+    "desc": "A epoch converter CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "epoch-converter-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "File Type Detector",
+    "desc": "A file type detector CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "file-type-detector-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Fstab Editor",
+    "desc": "A fstab editor CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "fstab-editor-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Git Branch Cleaner",
+    "desc": "A git branch cleaner CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "git-branch-cleaner-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Hash File",
+    "desc": "A hash file CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "hash-file-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Hex Dump",
+    "desc": "A hex dump CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "hex-dump-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Hex To Rgb",
+    "desc": "A hex to rgb CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "hex-to-rgb-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Html Strip",
+    "desc": "A html strip CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "html-strip-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Http Header Check",
+    "desc": "A http header check CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "http-header-check-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Iban Check",
+    "desc": "A iban check CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "iban-check-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Ini Parse",
+    "desc": "A ini parse CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ini-parse-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Ip Calc",
+    "desc": "A ip calc CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ip-calc-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Js Minify",
+    "desc": "A js minify CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "js-minify-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Json Flattener",
+    "desc": "A json flattener CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "json-flattener-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Json Validate",
+    "desc": "A json validate CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "json-validate-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Length Convert",
+    "desc": "A length convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "length-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Link Checker",
+    "desc": "A link checker CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "link-checker-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Log Tailer",
+    "desc": "A log tailer CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "log-tailer-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Mac Vendor Lookup",
+    "desc": "A mac vendor lookup CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "mac-vendor-lookup-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Markdown Toc",
+    "desc": "A markdown toc CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "markdown-toc-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Mount Manager",
+    "desc": "A mount manager CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "mount-manager-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Netstat Viewer",
+    "desc": "A netstat viewer CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "netstat-viewer-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Otp Generator",
+    "desc": "A otp generator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "otp-generator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Package Size",
+    "desc": "A package size CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "package-size-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Password Strength",
+    "desc": "A password strength CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "password-strength-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Phone Format",
+    "desc": "A phone format CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "phone-format-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Port Listener",
+    "desc": "A port listener CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "port-listener-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Postcode Validator",
+    "desc": "A postcode validator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "postcode-validator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Process Tree",
+    "desc": "A process tree CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "process-tree-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Qr Decode",
+    "desc": "A qr decode CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "qr-decode-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Ram Usage",
+    "desc": "A ram usage CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ram-usage-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Random Password Gen",
+    "desc": "A random password gen CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "random-password-gen-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Rgb To Hsl",
+    "desc": "A rgb to hsl CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "rgb-to-hsl-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Rot13",
+    "desc": "A rot13 CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "rot13-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Screenshot Ocr Cli",
+    "desc": "A screenshot ocr cli CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "screenshot-ocr-cli-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Slugify",
+    "desc": "A slugify CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "slugify-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Ssh Key Gen",
+    "desc": "A ssh key gen CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ssh-key-gen-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Ssl Expiry",
+    "desc": "A ssl expiry CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "ssl-expiry-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Stealth Port Scanner",
+    "desc": "A stealth port scanner CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "stealth-port-scanner-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Subdomain Enumerator",
+    "desc": "A subdomain enumerator CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "subdomain-enumerator-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Subnet Calc",
+    "desc": "A subnet calc CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "subnet-calc-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Symlink Manager",
+    "desc": "A symlink manager CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "symlink-manager-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Sysadmin Health Check",
+    "desc": "A sysadmin health check CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "sysadmin-health-check-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Temperature Convert",
+    "desc": "A temperature convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "temperature-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Text Crypt Cli",
+    "desc": "A text crypt cli CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "text-crypt-cli-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Text Encrypt",
+    "desc": "A text encrypt CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "text-encrypt-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Text Stats",
+    "desc": "A text stats CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "text-stats-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Timezone Convert",
+    "desc": "A timezone convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "timezone-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Tmux Session Manager",
+    "desc": "A tmux session manager CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "tmux-session-manager-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Toml To Json",
+    "desc": "A toml to json CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "toml-to-json-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Tsv To Csv",
+    "desc": "A tsv to csv CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "tsv-to-csv-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Url Encoder",
+    "desc": "A url encoder CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "url-encoder-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "User Auditor",
+    "desc": "A user auditor CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "user-auditor-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Uuid Gen",
+    "desc": "A uuid gen CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "uuid-gen-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Weight Convert",
+    "desc": "A weight convert CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "weight-convert-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Whois Cli",
+    "desc": "A whois cli CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "whois-cli-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Wifi Audit Scanner",
+    "desc": "A wifi audit scanner CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "wifi-audit-scanner-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Word Counter",
+    "desc": "A word counter CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "word-counter-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Xml Format",
+    "desc": "A xml format CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "xml-format-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
+  },
+  {
+    "name": "Yaml Validate",
+    "desc": "A yaml validate CLI utility",
+    "price": 4,
+    "version": "1.0.0",
+    "file": "yaml-validate-v1.0.0.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "ready to run",
+      "full source"
+    ]
   }
 ]
