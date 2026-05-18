@@ -1,6 +1,6 @@
 [
   {
-    "name": "AI Prompt Manager",
+    "name": "Prompt Manager",
     "desc": "A focused CLI utility with clean interface, helpful --help output, and no unnecessary dependencies.",
     "price": 4,
     "version": "1.0.0",
@@ -10,7 +10,7 @@
       "cli"
     ],
     "feats": [
-      "categorize by AI model",
+      "categorize by model type",
       "tag system with search",
       "variable substitution",
       "export to markdown"
