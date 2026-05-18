@@ -148,5 +148,21 @@
       "full source included",
       "ready to run"
     ]
+  },
+  {
+    "name": "batch",
+    "desc": "",
+    "price": 0,
+    "version": "1.0.0",
+    "file": "batch.zip",
+    "tags": [
+      "py",
+      "cli"
+    ],
+    "feats": [
+      "tested and working",
+      "full source included",
+      "ready to run"
+    ]
   }
 ]
