@@ -5,41 +5,445 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Joshua's Tool Store</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; }
-  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-  h1 { color: #58a6ff; font-size: 2em; margin-bottom: 8px; }
-  .subtitle { color: #8b949e; margin-bottom: 40px; }
-  .tool { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
-  .tool h2 { color: #f0f6fc; margin-bottom: 8px; }
-  .tool .desc { color: #8b949e; margin-bottom: 12px; line-height: 1.5; }
-  .tool .price { font-size: 1.4em; font-weight: bold; color: #3fb950; }
-  .tool .currency { font-size: 0.7em; color: #8b949e; }
-  .pay-box { background: #1c2333; border: 1px solid #30363d; border-radius: 8px; padding: 16px; margin-top: 16px; }
-  .pay-box h3 { color: #f0f6fc; font-size: 0.9em; margin-bottom: 8px; }
-  .pay-box .address { font-family: monospace; font-size: 0.85em; word-break: break-all; background: #0d1117; padding: 10px; border-radius: 4px; color: #58a6ff; cursor: pointer; border: 1px solid #30363d; display: block; margin: 8px 0; user-select: all; }
-  .pay-box .steps { font-size: 0.85em; color: #8b949e; margin-top: 8px; line-height: 1.6; }
-  .pay-box .steps li { margin-left: 16px; }
-  .btn-copy { background: #238636; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.85em; }
-  .btn-copy:hover { background: #2ea043; }
-  .footer { margin-top: 40px; text-align: center; color: #484f58; font-size: 0.8em; }
-  .badge { display: inline-block; background: #1f6feb; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7em; margin-left: 8px; vertical-align: middle; }
-  .btn-dl { display: inline-block; background: #1f6feb; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85em; margin-top: 8px; }
-  .btn-dl:hover { background: #388bfd; }
-  .copied-msg { color: #3fb950; font-size: 0.85em; margin-left: 8px; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #0a0a0f;
+  color: #e1e1e6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Animated gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(88, 166, 255, 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 50%, rgba(63, 185, 80, 0.04) 0%, transparent 50%);
+  z-index: -1;
+  animation: bgPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+/* Animated grid overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+}
+
+/* Header */
+.header {
+  padding: 60px 0 40px;
+  text-align: center;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(88,166,255,0.3), transparent);
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #58a6ff, #3fb950, #58a6ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradShift 4s ease-in-out infinite alternate;
+  margin-bottom: 12px;
+}
+
+@keyframes gradShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.header p {
+  color: #8b949e;
+  font-size: 1.05em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header .badge {
+  display: inline-block;
+  background: rgba(63, 185, 80, 0.1);
+  border: 1px solid rgba(63, 185, 80, 0.2);
+  color: #3fb950;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Stats bar */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 24px 0;
+  margin-bottom: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat .num {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #f0f6fc;
+}
+
+.stat .lbl {
+  font-size: 0.78em;
+  color: #8b949e;
+  margin-top: 2px;
+}
+
+/* Tool cards */
+.tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 40px;
+}
+
+.tool {
+  background: linear-gradient(135deg, rgba(22, 27, 34, 0.9), rgba(13, 17, 23, 0.9));
+  border: 1px solid rgba(48, 54, 61, 0.5);
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(88,166,255,0.03), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tool:hover {
+  border-color: rgba(88, 166, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+
+.tool:hover::before {
+  opacity: 1;
+}
+
+.tool-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-name {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #f0f6fc;
+}
+
+.tool-version {
+  display: inline-block;
+  background: rgba(31, 111, 235, 0.15);
+  border: 1px solid rgba(31, 111, 235, 0.2);
+  color: #58a6ff;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.tool-price {
+  font-size: 1.8em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3fb950, #2ea043);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tool-desc {
+  color: #8b949e;
+  line-height: 1.7;
+  font-size: 0.92em;
+  margin-bottom: 16px;
+}
+
+.tool-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(139, 148, 158, 0.08);
+  border: 1px solid rgba(139, 148, 158, 0.15);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.75em;
+  color: #8b949e;
+}
+
+.tag.python { border-color: rgba(88, 166, 255, 0.2); color: #58a6ff; }
+.tag.bash { border-color: rgba(63, 185, 80, 0.2); color: #3fb950; }
+.tag.cli { border-color: rgba(242, 211, 91, 0.2); color: #f2d35b; }
+
+/* Payment box */
+.pay-box {
+  background: rgba(13, 17, 23, 0.6);
+  border: 1px solid rgba(48, 54, 61, 0.4);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.pay-box:hover {
+  border-color: rgba(88, 166, 255, 0.2);
+}
+
+.pay-box h3 {
+  color: #f0f6fc;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pay-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.pay-amount {
+  background: rgba(63, 185, 80, 0.06);
+  border: 1px solid rgba(63, 185, 80, 0.15);
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.pay-amount .big {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #3fb950;
+}
+
+.pay-amount .sm {
+  font-size: 0.75em;
+  color: #8b949e;
+}
+
+.pay-address {
+  flex: 1;
+  min-width: 200px;
+}
+
+.pay-address label {
+  font-size: 0.8em;
+  color: #8b949e;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.address-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.address-box .addr {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.8em;
+  word-break: break-all;
+  background: #0d1117;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #58a6ff;
+  border: 1px solid #30363d;
+  user-select: all;
+  flex: 1;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.address-box .addr:hover {
+  border-color: #58a6ff;
+}
+
+.btn-copy {
+  background: linear-gradient(135deg, #238636, #2ea043);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-copy:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(35, 134, 54, 0.3);
+}
+
+.btn-copy:active {
+  transform: translateY(0);
+}
+
+.steps {
+  margin-top: 12px;
+  font-size: 0.82em;
+  color: #8b949e;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.steps li {
+  margin-left: 4px;
+}
+
+.steps li::marker {
+  color: #58a6ff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 0 60px;
+  border-top: 1px solid rgba(48, 54, 61, 0.3);
+  margin-top: 20px;
+}
+
+.footer p {
+  color: #484f58;
+  font-size: 0.85em;
+  margin-bottom: 4px;
+}
+
+.footer a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(88,166,255,0.1);
+  border-top-color: #58a6ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading p {
+  color: #8b949e;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .header { padding: 40px 0 24px; }
+  .logo { font-size: 2.2em; }
+  .stats { gap: 24px; }
+  .tool-header { flex-direction: column; }
+  .pay-info { flex-direction: column; }
+  .address-box { flex-direction: column; }
+  .btn-copy { width: 100%; text-align: center; }
+}
 </style>
 </head>
 <body>
+
 <div class="container">
 
-<h1>Joshua's Tool Store</h1>
-<p class="subtitle">Handy CLI tools to get the job done. Pay with Litecoin, get the full source code + package.</p>
+<div class="header">
+  <div class="badge">Secure Payments via Litecoin</div>
+  <div class="logo">Joshua's Tool Store</div>
+  <p>Handcrafted command-line tools for developers, sysadmins, and security professionals. Pay once, own forever. Full source code included.</p>
+</div>
 
-<div id="tools"></div>
+<div id="stats" class="stats"></div>
+
+<div id="tools" class="tools-grid">
+  <div class="loading">
+    <div class="spinner"></div>
+    <p>Loading tools...</p>
+  </div>
+</div>
 
 <div class="footer">
-  <p>Questions? pxdays@users.noreply.github.com</p>
-  <p style="margin-top:4px;">All tools include full source code + ready-to-use package.</p>
+  <p>Questions or issues? <a href="mailto:pxdays@users.noreply.github.com">pxdays@users.noreply.github.com</a></p>
+  <p>All tools include full source code. Payments are final.</p>
 </div>
 
 </div>
@@ -50,53 +454,86 @@ const LTC_ADDRESS = "LNVJxFNcD5Mn8AjbAHQGpX2EqVDhKfF4sA";
 const tools = [
   {
     name: "AI Prompt Manager",
-    desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI.",
+    desc: "Save, organize, and quickly reuse AI prompts. Categorize by model, tag system, search/filter, export to markdown, copy to clipboard. Full terminal UI with rich formatting.",
     price: 4,
     version: "1.0.0",
-    file: "ai-prompt-manager-v1.0.0.zip"
+    file: "ai-prompt-manager-v1.0.0.zip",
+    tags: ["Python", "CLI", "Productivity"],
+    features: ["Categorize by AI model", "Tag system with search", "Variable substitution", "Export to markdown", "Copy to clipboard"]
   },
   {
     name: "Bulk Image Resizer",
-    desc: "Resize hundreds of images at once. Supports jpg, png, webp, avif. Progress bar, folder watch mode, quality settings.",
+    desc: "Resize hundreds of images at once. Supports JPG, PNG, WebP, AVIF. Features progress bar, folder watch mode, and quality settings.",
     price: 4,
     version: "1.0.0",
-    file: "bulk-image-resizer-v1.0.0.zip"
+    file: "bulk-image-resizer-v1.0.0.zip",
+    tags: ["Python", "CLI", "GUI"],
+    features: ["Batch resize 100s of images", "Supports JPG/PNG/WebP/AVIF", "Folder watch mode", "Quality control", "Progress bar"]
   }
 ];
 
 const container = document.getElementById('tools');
+const statsEl = document.getElementById('stats');
+
+// Stats
+statsEl.innerHTML = `
+  <div class="stat"><div class="num">${tools.length}</div><div class="lbl">Tools Available</div></div>
+  <div class="stat"><div class="num">$${tools.reduce((a,t) => a + t.price, 0)}</div><div class="lbl">Total Value</div></div>
+  <div class="stat"><div class="num">LTC</div><div class="lbl">Accepted</div></div>
+`;
+
+container.innerHTML = '';
 tools.forEach(t => {
   const ltc = (t.price / 100).toFixed(2);
-  const safe = t.name.replace(/[^a-zA-Z0-9]/g, '');
-  container.innerHTML += `
-    <div class="tool">
-      <h2>${t.name} <span class="badge">v${t.version}</span></h2>
-      <div class="desc">${t.desc}</div>
-      <div class="price">$${t.price} <span class="currency">USD</span></div>
-      <div style="margin: 10px 0;color:#8b949e;font-size:0.85em;">✅ In stock · delivered within 24h of payment</div>
-      <div class="pay-box">
-        <h3>Pay with Litecoin</h3>
-        <div style="margin: 6px 0;font-size:0.9em;"><strong>Amount:</strong> ~${ltc} LTC</div>
-        <div style="font-size:0.85em;margin-bottom:4px;"><strong>Send to:</strong></div>
-        <div class="address" id="addr-${safe}">${LTC_ADDRESS}</div>
-        <button class="btn-copy" onclick="copyAddr('${safe}')">Copy Address</button>
-        <span id="copied-${safe}" class="copied-msg"></span>
-        <ol class="steps">
-          <li>Send the LTC to the address above</li>
-          <li>Email transaction ID to pxdays@users.noreply.github.com</li>
-          <li>You'll receive the download link within 24 hours</li>
-        </ol>
+  const safeId = t.name.replace(/[^a-zA-Z0-9]/g, '');
+  
+  const tagsHtml = (t.tags || []).map(tag => `<span class="tag ${tag.toLowerCase()}">${tag}</span>`).join('');
+  const featuresHtml = (t.features || []).map(f => `<li>${f}</li>`).join('');
+  
+  const card = document.createElement('div');
+  card.className = 'tool';
+  card.innerHTML = `
+    <div class="tool-header">
+      <div>
+        <span class="tool-name">${t.name}</span>
+        <span class="tool-version">v${t.version}</span>
       </div>
-    </div>`;
+      <div class="tool-price">$${t.price}</div>
+    </div>
+    <div class="tool-desc">${t.desc}</div>
+    <div class="tool-meta">${tagsHtml}</div>
+    ${featuresHtml ? `<ul class="steps" style="margin-bottom:12px;">${featuresHtml}</ul>` : ''}
+    <div class="pay-box">
+      <h3>Purchase</h3>
+      <div class="pay-info">
+        <div class="pay-amount">
+          <div class="big">~${ltc} LTC</div>
+          <div class="sm">at current rate</div>
+        </div>
+        <div class="pay-address">
+          <label>Send Litecoin to:</label>
+          <div class="address-box">
+            <span class="addr" id="addr-${safeId}">${LTC_ADDRESS}</span>
+            <button class="btn-copy" onclick="copyAddr('${safeId}')">Copy</button>
+          </div>
+        </div>
+      </div>
+      <span id="copied-${safeId}" style="color:#3fb950;font-size:0.8em;"></span>
+      <ol class="steps">
+        <li>Send the LTC to the address above</li>
+        <li>Email transaction ID to pxdays@users.noreply.github.com</li>
+        <li>Receive download link within 24 hours</li>
+      </ol>
+    </div>
+  `;
+  container.appendChild(card);
 });
 
 function copyAddr(id) {
   const el = document.getElementById('copied-' + id);
   const text = document.getElementById('addr-' + id).textContent.trim();
-  navigator.clipboard.writeText(text).then(() => {
-    el.textContent = 'Copied!';
-    setTimeout(() => el.textContent = '', 2000);
-  }).catch(() => {
+  
+  const fallback = () => {
     const ta = document.createElement('textarea');
     ta.value = text;
     document.body.appendChild(ta);
@@ -105,7 +542,16 @@ function copyAddr(id) {
     document.body.removeChild(ta);
     el.textContent = 'Copied!';
     setTimeout(() => el.textContent = '', 2000);
-  });
+  };
+  
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      el.textContent = 'Copied!';
+      setTimeout(() => el.textContent = '', 2000);
+    }).catch(fallback);
+  } else {
+    fallback();
+  }
 }
 </script>
 </body>
