@@ -68,21 +68,5 @@
       "dead code injection",
       "GUI mode with zenity"
     ]
-  },
-  {
-    "name": "AI Prompt Manager",
-    "desc": "test",
-    "price": 4,
-    "version": "1.0.0",
-    "file": "test.zip",
-    "tags": [
-      "py",
-      "cli"
-    ],
-    "feats": [
-      "tested and working",
-      "full source included",
-      "ready to run"
-    ]
   }
 ]
